@@ -16,8 +16,8 @@
 <ul>
   <li><a href="#Introduction">Introduction</a></li>
   <li><a href="#Integrate-and-fire-model">Integrate and fire model</a></li>
-  <li><a href="#QIF-model">QIF model</a></li>
-
+  <li><a href="#Quadratic-Integrate-and-fire-model">Quadratic Integrate and fire model model</a></li>
+  <li><a href="#Theta-model">Theta model</a></li>
 </ul>
 
 
@@ -43,7 +43,7 @@
   <p><img src="images/IF.png" alt="Integrate-and-fire-model w.r.t current inputs"></p>
 
   <!-- QIF Section -->
-<h2 id="Quadratic-Integrate-and-fire-model">Quadratic-Integrate and fire model</h2>
+<h2 id="Quadratic-Integrate-and-fire-model">Quadratic Integrate and fire model</h2>
 <p>In an EF model  
                         $$\tau \frac{𝑑𝑢}{𝑑𝑡}=𝐹(𝑢)$$
 If we have $F(u)$ a quadratic equation then the model will be called Quadratic Integrate and fire neuron; QIF. 
