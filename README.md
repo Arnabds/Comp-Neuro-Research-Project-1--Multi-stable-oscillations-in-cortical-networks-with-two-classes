@@ -57,8 +57,8 @@ The input current is 30 and 50 at time 50 and 300.
         Your browser does not support the video tag.
     </video></p>
 
-<h2 id="Theta model">Theta model</h2>
-<p>if we put $𝑢=tan⁡〖(𝜃/2)〗$ then our equation $$\tau \frac{𝑑𝑢}{𝑑𝑡}=𝑢^2−𝑎^2+𝐼$$ will become
+<h2 id="Theta-model">Theta model</h2>
+<p>if we put $𝑢=tan⁡(𝜃/2)$ then our equation $$\tau \frac{𝑑𝑢}{𝑑𝑡}=𝑢^2−𝑎^2+𝐼$$ will become
 $$\tau \frac{𝑑\theta}{𝑑𝑡}=(1−\sin⁡\theta)−𝑎^2 (\cos⁡\theta+1)+𝐼(\cos⁡\theta+1)$$
 This is a Theta model.
 
