@@ -52,8 +52,10 @@ In the RHS video I have used
  $$𝐹(𝑢)=𝑢^2−𝑎^2+𝐼. $$
 The input current is 30 and 50 at time 50 and 300.
 
-<p>
-  <p><img src="videos/qif_neuron_simulation.mp4" alt="Integrate-and-fire-model w.r.t current inputs"></p>
+<p><video controls>
+        <source src="videos/qif_neuron_simulation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video></p>
 
 </body>
 </html>
