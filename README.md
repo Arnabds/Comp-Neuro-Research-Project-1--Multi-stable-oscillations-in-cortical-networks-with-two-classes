@@ -23,7 +23,7 @@
 
 <!-- Sections -->
 <!-- Introduction Section -->
-<h2 id="#Introduction">Introduction</h2>
+<h2 id="Introduction">Introduction</h2>
 <p>Recently we have seen a lot of studies of E + I neuron networks, spiking models,
    γ oscillatory neurons, etc. Recent studies indicate the importance of the other populations 
    of inhibitory interneurons. The E + I network is specifically Pyramidal cells (E) and Parvalbumin(I) cells,
@@ -32,7 +32,7 @@
 </p>
 
 <!-- IF Section -->
-<h2 id="#Integrate-and-fire-model">Integrate and fire model</h2>
+<h2 id="Integrate-and-fire-model">Integrate and fire model</h2>
 <p>The Integrate-and-Fire neuron is a simplified computational model that simulates the membrane potential 
   of a neuron, integrating incoming electrical signals until a threshold is reached, at which point it "fires" 
   (generates an action potential) and then resets its membrane potential. This model captures the basic behavior
@@ -43,7 +43,7 @@
   <p><img src="images/IF.png" alt="Integrate-and-fire-model w.r.t current inputs"></p>
 
   <!-- QIF Section -->
-<h2 id="#Quadratic-Integrate-and-fire-model">Quadratic-Integrate and fire model</h2>
+<h2 id="Quadratic-Integrate-and-fire-model">Quadratic-Integrate and fire model</h2>
 <p>In an EF model  
                         $$\tau \frac{𝑑𝑢}{𝑑𝑡}=𝐹(𝑢)$$
 If we have $F(u)$ a quadratic equation then the model will be called Quadratic Integrate and fire neuron; QIF. 
@@ -57,7 +57,7 @@ The input current is 30 and 50 at time 50 and 300.
         Your browser does not support the video tag.
     </video></p>
 
-<h2 id="#Theta model">Theta model</h2>
+<h2 id="Theta model">Theta model</h2>
 <p>if we put $𝑢=tan⁡〖(𝜃/2)〗$ then our equation $$\tau \frac{𝑑𝑢}{𝑑𝑡}=𝑢^2−𝑎^2+𝐼$$ will become
 $$\tau \frac{𝑑\theta}{𝑑𝑡}=(1−\sin⁡\theta)−𝑎^2 (\cos⁡\theta+1)+𝐼(\cos⁡\theta+1)$$
 This is a Theta model.
