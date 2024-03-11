@@ -38,7 +38,7 @@
    The right hand side RC circuit model 
   $$\tau \frac{dy}{dx}=-(u-u_{rest})+RI$$
 <p>
-  <p><img src="/images/I&F.png" alt="Integrate-and-fire-model w.r.t current inputs"></p>
+  <p><img src="/images/IF.png" alt="Integrate-and-fire-model w.r.t current inputs"></p>
 
 </body>
 </html>
