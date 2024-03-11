@@ -1,0 +1,35 @@
+<h1>Asset Monitoring and Predictive Maintenance</h1>
+<h3>Sponsored by FPoliSolutions, LLC</h3>
+
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#Project-details">Project details</a></li>
+  <li><a href="#Computer-experiments-to-study-patterns">Computer experiments to study patterns</a></li>
+  <li><a href="#Data">Data</a></li>
+  <li><a href="#Project-instructions">Project instructions</a></li>
+  <li><a href="#Steps">Steps</a>
+    <ul>
+      <li><a href="#EDA-and-Preprocessing">EDA and Preprocessing</a></li>
+      <li><a href="#Cluster-Analysis">Cluster Analysis</a></li>
+      <li><a href="#Models">Models</a></li>
+      <li><a href="#Prediction">Prediction</a></li>
+      <li><a href="#Performance">Performance</a></li>
+      <li><a href="#Extra">Extra</a>
+        <ul>
+          <li><a href="#SVC">SVC</a></li>
+          <li><a href="#Neural-Net">Neural Net</a></li>
+        </ul>
+      </li>
+      <li><a href="#Summary">Summary</a></li>
+      <li><a href="#Things-to-answer-and-to-be-updated-next">Things to answer and to be updated next</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr/>
+
+<h2 id="Project-details">Project details</h2>
+<blockquote>
+  <p>Large engineered systems such as nuclear power plants consist of thousands of interconnected components.</p>
+  <p>Components eventually wear out over time which may lead to strange anomalies, faults, and system failures.</p>
+</blockquote>
