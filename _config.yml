@@ -1,304 +1,39 @@
-# title: Arnab Dey Sarkar
-# #logo: /assets/img/headshot_circle.png
-# description: Graduate student at University of Pittsburgh
-# #show_downloads: true
-# theme: jekyll-theme-minimal
+title: "Asset Monitoring and Predictive Maintenance"
+sponsor: "FPoliSolutions, LLC"
 
+# Assuming the use of custom variables for content structure
+content_structure:
+  - section: "Project details"
+    url: "#Project-details"
+  - section: "Computer experiments to study patterns"
+    url: "#Computer-experiments-to-study-patterns"
+  - section: "Data"
+    url: "#Data"
+  - section: "Project instructions"
+    url: "#Project-instructions"
+  - section: "Steps"
+    subsections:
+      - title: "EDA and Preprocessing"
+        url: "#EDA-and-Preprocessing"
+      - title: "Cluster Analysis"
+        url: "#Cluster-Analysis"
+      - title: "Models"
+        url: "#Models"
+      - title: "Prediction"
+        url: "#Prediction"
+      - title: "Performance"
+        url: "#Performance"
+      - title: "Extra"
+        extra_sections:
+          - title: "SVC"
+            url: "#SVC"
+          - title: "Neural Net"
+            url: "#Neural-Net"
+      - title: "Summary"
+        url: "#Summary"
+      - title: "Things to answer and to be updated next"
+        url: "#Things-to-answer-and-to-be-updated-next"
 
-# Site
-repository: https://github.com/Arnabds/Arnabds.github.io/tree/main
-favicon: images/favicon.ico
-
-# Content configuration version
-version: 2
-
-# Personal info
-name: Arnab Dey Sarkar
-title: Graduate student at University of Pittsburgh
-email: arnabdeysarkar05@gmail.com
-website: arnabds.github.io
-
-# Dark Mode (true/false/never)
-darkmode: true
-
-# Social links
-twitter_username: arnabds_jk
-github_username:  Arnabds
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: pen_and_perfume
-linkedin_username: arnab-dey-sarkar
-# xing_username: jekyll
-# pinterest_username: jekyll
-youtube_username: deysarkararnab8934
-researchgate_username: Arnab-Dey-Sarkar
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
-
-# Additional icon links
-additional_links:
-- title: personal website
-  icon: fas fa-globe
-  url: https://sites.google.com/view/arnabdeysarkar/home?authuser=0
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
-# About Section
-# about_title: About Me
-about_profile_image: images/profile1.jpg
-about_content: | # this will include new lines to allow paragraphs
-  I'm Arnab, a math grad student at the University of Pittsburgh, researching computational neuroscience with Dr. Bard Ermentrout. I specialized in pure mathematics during my MSc at IISER Bhopal, focusing on Algebra and Number Theory. 
-  Currently, I'm diving into data science and machine learning at CMU with Dr. Robert Kass. With experience teaching at several institutions, I've honed my teamwork and leadership skills. 
-  I pride myself on patiently <mark>teaching calculus</mark> to students and <mark>expertly deboning Bengali fish</mark> dishes.
-content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Can median house value be predicted based on population characteristics?
-        link: https://www.stat.cmu.edu/capstoneresearch/fall2022/600files/poster4.pdf
-        # link_text: Project Website
-        additional_links:
-          - title:  Arnabds/CMU36600-Overview-of-Statistical-Learning-and-Modeling
-            icon: fab fa-github
-            url: https://github.com/Arnabds/CMU36600-Overview-of-Statistical-Learning-and-Modeling
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          It was my first project and many data science staff went over my head but I started getting interested.
-          Skill set used R
-        description: | # this will include new lines to allow paragraphs
-          It was a poster presentation in a group and it was my first applied project. I did the data cleaning and visualization using tidyverse, Dplyr, and GGPlot hist and Corrplot. We tried to visualize the data to get an idea of how the cost of a house(dependent variable) depends on other factors e.g. 
-          no of bedrooms, the population of the area, vacant units, etc. Motivated from here, I am trying to write a project on California house prices with some predictive modeling.
-      - layout: top-middle
-        title: Predictive Maintenance
-        link: https://github.com/Arnabds/FPoliSolutions-Predictive-Maintenance
-        # link_text: Project Website
-        additional_links:
-          - title:  Arnabds/FPoliSolutions-Predictive-Maintenance
-            icon: fab fa-github
-            url: https://github.com/Arnabds/FPoliSolutions-Predictive-Maintenance
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          I was really satisfied when I executed this single-handedly (although I used my both hand!)
-          Skill set used Python
-        description: | # this will include new lines to allow paragraphs
-          This project was all about predicting when a machine is going to <mark>fail</mark> from the variable inputs. The main model we used here is logistic regression and we performed SVC at the end. In the general file I have given general introduction, performed EDA, cluster analysis, introduced different 
-          models, analyzed their performance, and made predictions then as a Bonus we touched SVC and Neural Networks briefly.
-      - layout: top-middle
-        title: Change in neuronal waves with synaptic input of excitatory, inhibitory neurons and somatostatin
-        link: 
-        # link_text: Project Website
-        additional_links:
-          - title: 
-            icon: fab fa-github
-            url: 
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          My ongoing Ph.D. research project
-          Skill set used XPPAUT, MATLAB, Python
-        description: | # this will include new lines to allow paragraphs
-          We are dealing with the population model and spiking model which are related by theta transformation and that is why the model is called by the name as theta model. We have shown the transformation calculation in particular. Then we wanted to find out a particular impulse through which we can jump between 
-          higher and lower oscillations. The challenge was that we were dealing with a large population of neurons and that is why we had to start with the case study and bifurcation diagram. We got some ideas and I managed to find good parameters so that the neurons behave as we wanted in 9D then we extended the 
-          case to the population of neurons and the system responded correctly. Now we were trying to summarise the result. Theta neuron model has application in visual cortex and also in Parkinson's disease as we noticed delayed beta oscillation in Parkinson which can be studied using theta model.
-
-      - layout: top-middle
-        title: K-Means
-        link: https://arnabds.github.io/K-Means/
-        # link_text: Project Website
-        additional_links:
-          - title: Smiley Face Clustering
-            icon: fab fa-github
-            url: https://github.com/Arnabds/K-Means/edit/main/README.md
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          An explanatory page of KMeans.
-          Skill set used XPPAUT, MATLAB, Python
-        description: | # this will include new lines to allow paragraphs
-          Shown KMeans with a smiley example and explained its theory.
-          
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Teaching Assistant at University of Pittsburgh
-        link: https://www.mathematics.pitt.edu/people/ant-41
-        # link_text: boringcompany.com
-        sub_title: Graduate Student researcher
-        caption: Sep 2020 - Present(exp 2025 April)
-        quote: >
-          Taught undergraduate and graduate students with great care.
-        description: | # this will include new lines to allow paragraphs
-           - Taught complete courses like college algebra, precalculus, and calculus 1 and 2 with sole responsibility.
-           - Responsible for teaching, covering recitation, holding office hours, and grading.
-           - Graded advanced undergraduate courses like Vector calculus linear algebra, ODE, PDE, and Discrete mathematics.
-
-      - layout: left
-        title: Teacher and admin at Cheenta Ganit Kendra
-        # link_text: boringcompany.com
-        sub_title: Teacher
-        caption: May 2017 - Aug 2018
-        quote: >
-          At least my pure math skills got used a bit.
-        description: | # this will include new lines to allow paragraphs
-           - Taught olympiad-level courses to high school students
-           - Served as admin of college math group.
-           
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: University of Pittsburgh
-        caption: Sep 2020 - Apr 2025(exp)(GPA 3.9 out of 4)
-        sub_title: PhD, Mathematics
-        quote: >
-          Founded by Hugh Henry Brackenridge as Pittsburgh Academy in 1787, the University of Pittsburgh is one of the few universities and colleges established in the 18th century in the United States. It is the oldest continuously chartered institution 
-          of learning in the U.S. west of the Allegheny Mountains. Now the 132-acre Pittsburgh campus includes various historic buildings that are part of the Schenley Farms Historic District, most notably its 42-story Gothic revival centerpiece, the Cathedral of Learning. 
-        description: | # this will include new lines to allow paragraphs
-          I have shifted my interest to applied math and started working on computational neuroscience as I wanted to contribute to a real-world problem. I have neurological diseases in my family which gave me the motivation to choose this path.
-          
-          I spent a lot of my free time as a committee member of administrative clubs like Graduate student organizations and Graduate and Professional Student Government taking on roles such as GPSG representative, chair of diversity board, and Summer research funding committee.
-      - layout: left
-        title: Indian Institute of Science Education and Research Bhopal
-        caption: May 2018 (CGPA 9.32 out of 10)
-        sub_title: M.Sc, Mathematics
-        quote: >
-              Indian Institutes of Science Education and Research (IISERs) were created in 2006 through a proclamation of the Ministry of Human Resource Development, Government of India, under the category of institutes of national importance, to promote quality education and research 
-              in basic sciences. Soon after the announcement, two of these institutes at Pune and Kolkata, respectively, were started in 2006. This was followed by institutes at Mohali (2007), Bhopal and Thiruvananthapuram (2008), Tirupati (2015) and Berhampur (2016). Each IISER is a degree granting autonomous institution with a prime focus to integrate science, education and research.
-        description: | # this will include new lines to allow paragraphs
-          I have studied pure math while focusing on algebra and analysis. I got interested in numbers. All of my reading projects were on algebraic and analytic number theory, modular forms and elliptic curves. I met some really
-          good teachers who were pure mathematicians.
-          
-          I spent a lot of my free time as a social worker teaching village kids in a nearby villa named Bhauri.
-
-  - title: Awards and Scholarships
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      During my academic journey, I have received several accolades.
-      - National Board of Higher Mathematics, MSc scholarship, Awarded 72k inr.
-      - National Eligibility Test (AI rank 83), MSc was supported by CSIR with 25k inr per month.
-      - Awarded Pi Mu Epsilon, National Honorary Mathematics Society.
-      - GSR by UPitt, Was funded by my advisor after clearing my comprehensive exam in my Ph.D.   
-
-  - title: Technical Skills
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      - Python
-      - R(learning)
-      - XPPAUT
-      - SQL(learning)
-      - MATLAB(learning)
-      - Others Latex, Markdown, Microsoft Office
-
-  - title: Languages
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      - Bengali(Native)
-      - Hindi(Fluent)
-      - English(Fluent)
-
-
-  - title: Conference talks # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: BYMAT(Bringing Young Mathematicians Together), Madrid, Spain
-        caption: Summer 2019
-        description: | # this will include new lines to allow paragraphs
-          Presented paper in Arithmetic Dynamics funded by BYMAT then visited Alfréd Rényi Institute of Mathematics; Budapest to attend seminars on algebraic geometry.
-                
-
-  - title: Publications # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Gupta, Ashish; Dey Sarkar, Arnab. 
-        caption: 08.16.2017
-        sub_title: A Dichotomy for the Gelfand–Kirillov Dimensions of Simple Modules over Simple Differential Rings. DOI:10.1007/s10468-017-9728-6
-        description: | # this will include new lines to allow paragraphs
-          In this paper we show a dichotomy for the Gelfand–Kirillov dimension of simple modules over certain simple rings of differential operators. We thus answer a question of J. C. McConnell in Representations of solvable Lie algebras
-
-  - title: Graduate Coursework
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Some selected graduate level courses from my coursework:
-      - Overview of Statistical Learning and Modeling, CMU, Grade A
-      - Data Science in Python, UPitt, Grade A+
-      - Applied Data-Driven Methods, UPitt, Grade A+
-      - Algebra 1, 2, UPitt, Grade: A+
-      - Algebraic Geometry, Topology, UPitt, Grade A
-      - Algebraic and Analytic Number Theory, IISER, Grade A
-      - Modular forms, IISER, Grade A
-
-
-  - title: Admin work # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Executive board member of MathGSO
-        caption: 2021-2024
-        description: | # this will include new lines to allow paragraphs
-          Worked for the good of grad students in the math department, helped the professors in a graduate open house to orientation, arranged social gatherings, released departmental statements for sensitive  issues, had meetings with the
-          graduate chair about students' summer employment, etc.
-      - layout: left
-        title: Council member of Arts and Science Graduate Student Organization
-        caption: 2021-2024
-        description: | # this will include new lines to allow paragraphs
-          Learning process from my side about bigger graduate student organizations. Chaired the diversity board and worked in the committee of summer research funding.
-      - layout: left
-        title: GPSG representative(ongoing)
-        caption: 2021-2024
-        description: | # this will include new lines to allow paragraphs
-          Elected in 03.2023. Being on the executive board, was on the selection board for the ASGSO summer research grant, and had meetings with the Graduate deans about the betterment of graduate student life like salary raise, health insurance benefits, etc.
-
-  - title: Social work
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      - In my undergrad, completed 30 hours of environment cleaning and 60 hours in rural child education. A group of people actively participated in cleaning our local streets and traveled inter-district teaching village kids who were below the poverty level 
-      - In my undergrad, served 50 hours of cleaning the college surrounding and planted 150 trees.
-      - At IISER, participated in teaching Bhauri village students. From Cheenta, participated in teaching kids in Sunderbans in India.
- 
-
-     
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my research interests, some of my other interests and hobbies are:
-      - story book reading(Reading 'Atomic habits' now)
-      - Gaming, Love to play Call of Duty mobile
-      - Gym, trying head stand now a days
-      - Cooking, I rate myself a pro in Bengali dishes. Hope to open a restaurant post-retirement.
-      
-      Look at this cool image  
-      ![Trees](/images/landscape-trees.jpg "Trees")
-
-      
-# Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
-
-# Build settings
-remote_theme: sproogen/resume-theme
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-plugins:
- - jekyll-seo-tag
+project_summary: >
+  Large engineered systems such as nuclear power plants consist of thousands of interconnected components.
+  Components eventually wear out over time which may lead to strange anomalies, faults, and system failures.
