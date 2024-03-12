@@ -211,11 +211,12 @@ $$
 \end{aligned}
 $$
 for excitatory, inhibitory and somatostatin we simulated them over XPPAut
-```
+    ```
+    
     ae'=(2*ae*be+dele)/tme
     be'=(be^2-ae^2+gee*se-gie*si-ld*gse*ss+mue)/tme
     se'=(-se+ae/pi)/taue
-    
+   
     ai'=(2*ai*bi+deli)/tmi
     bi'=(bi^2-ai^2+gei*se-gii*si-ld*gsi*ss+mui)/tmi
     si'=(-si+ai/pi)/taui
@@ -240,10 +241,48 @@ for excitatory, inhibitory and somatostatin we simulated them over XPPAut
     @ autoxmax=4, autoymax=2, ds=.05, dsmin=0.001, dsmax=0.05, parmin=0, parmax=3.9
     
     @ total=4000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
-    d
-```
+    d 
+    ```
+The mathematical version of our model is given by,
 
-Here 
+\begin{align*} 
+s_e'&=\frac{1}{\tau_e}\left(-s_e+\frac{a_e}{\pi}\right)\\
+a_e'&=\frac{1}{\tau_{me}}(2a_eb_e+\delta_e)\\
+b_e'&=\frac{1}{\tau_{me}}(b_e^2-a_e^2+g_{ee}s_e-g_{ie}s_i-\lambda g_{se}ss+\mu_e)\\
+s_i'&=\frac{1}{\tau_i}\left(-s_i+\frac{a_i}{\pi}\right)\\
+a_i'&=\frac{1}{\tau_{mi}}(2a_ib_i+\delta_i)\\
+b_i'&=\frac{1}{\tau_{mi}}(b_i^2-a_i^2+g_{ei}s_e-g_{ii}s_i-\lambda g_{si}ss+\mu_i)\\
+s_s'&=\frac{1}{\tau_s}\left(-s_s+\frac{a_s}{\pi}\right)\\
+a_s'&=\frac{1}{\tau_{ms}}(2a_sb_s+\delta_s)\\
+b_s'&=\frac{1}{\tau_{ms}}(b_s^2-a_s^2+g_{es}s_e-g_{is}s_i- g_{ss}ss+\mu_s).
+\end{align*}
+
+Here $s'=\dv[s]t.$
+\mbox{}
+The values are given for the bifurcation diagram,
+\nomenclature{$\tau_{e}$}{Time constant for the excitatory state$=2$}
+\nomenclature{$\tau_i$}{Time constant for the inhibitory state$=7.5$}
+\nomenclature{$\tau_s$}{Time constant for this component's state$=15$}
+\nomenclature{$\tau_{me}$}{Time constant related to amplitude variables$=20$}
+\nomenclature{$\tau_{mi}$}{Time constant related to amplitude variables$=10$}
+\nomenclature{$\tau_{ms}$}{Time constant related to amplitude variables$=10$}
+\nomenclature{$g_{ee}$}{Interaction strengths or connectivity coefficients between excitatory neurons$=2$}
+\nomenclature{$g_{ie}$}{Interaction strengths or coupling parameter from i to e$=1$}
+\nomenclature{$g_{se}$}{Interaction strengths or coupling parameter from s to e$=2$}
+\nomenclature{$g_{ei}$}{Interaction strengths or coupling parameter from e to i$=2$}
+\nomenclature{$g_{ii}$}{Interaction strengths or connectivity coefficients between inhibitory neurons$=0.5$}
+\nomenclature{$g_{si}$}{Interaction strengths or coupling parameter from s to i$=0.5$}
+\nomenclature{$g_{es}$}{Interaction strengths or coupling parameter from e to s$=4.25$}
+\nomenclature{$g_{is}$}{Interaction strengths or coupling parameter from i to s$=0$}
+\nomenclature{$g_{ss}$}{Interaction strengths or connectivity coefficients between somatostatin neurons$=0$}
+\nomenclature{$\mu_{e}$}{External input to the excitatory population$=0$}
+\nomenclature{$\mu_{i}$}{External input to the inhibitory population$=-0.5$}
+\nomenclature{$\mu_{s}$}{External input to this component$=-2$}
+\nomenclature{$\delta_{e}$}{An external input or driving force affecting the excitatory population $a_e=0.1$}
+\nomenclature{$\delta_{i}$}{An external input or driving force affecting the inhibitory population $a_i=0.1$}
+\nomenclature{$\delta_{s}$}{An external input or driving force affecting the inhibitory population $a_s=0.1$}
+\nomenclature{$\lambda$}{Parameter that influence synaptic activity$=0.85$}
+\printnomenclature
 </p>
 
    
