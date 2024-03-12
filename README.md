@@ -123,7 +123,33 @@ $$
 & \tau_m \frac{\partial \beta}{\partial t}=\beta^2-\alpha^2+\mu+\Delta \xi+g S .
 \end{aligned}
 $$
+With this ansatz, we see that
+$$
+r(t)=\frac{1}{\pi} \int_{-\infty}^{\infty} q(\xi) \alpha(\xi, t) d \xi .
+$$
+So that we have an infinite set of differential equations (one for each value of $\xi$ all coupled via \(r(t)\) as:
+$$
+\tau_s \frac{d S}{d t}=-S+r(t) .
+$$
 
+Let \(w(\xi, t)=\beta(\xi, t)+i \alpha(\xi, t)\) so that
+$$
+\tau_m \frac{\partial w}{\partial t}=w^2+\mu+\Delta \xi+g S .
+$$
+To close this system we need to evaluate the integral that defines \(r(t)\). 
+Using the Cauchy Residue theorem we get that
+
+$$
+r(t)=\frac{1}{\pi} \alpha(i, t)
+$$
+so that all that wee need to do is study our system at a single value of $\xi=i$. Let $w(i, t)=b(t)+i a(t)$ and derive
+$$
+\begin{aligned}
+\tau_m a_t & =2 a b+\Delta, \\
+\tau_m b_t & =b^2-a^2+\mu+g S \\
+\tau_s S_t & =-S+\frac{a}{\pi}
+\end{aligned}
+$$
 </p>
 
 
