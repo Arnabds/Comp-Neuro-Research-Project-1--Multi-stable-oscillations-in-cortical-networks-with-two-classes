@@ -91,7 +91,7 @@ $$
 \tau_s \frac{d S}{d t}=-S+\frac{1}{N} \sum_{j=1}^N \sum_k \delta\left(t-t_j^k\right)\tau_m .
 $$
     
-The times $t_j^k$ satisfy
+The times \(t_j^k\) satisfy
 
 $$
 \lim _{t \rightarrow t_j^k} V_j(t)=+\infty
