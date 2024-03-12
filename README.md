@@ -79,7 +79,10 @@ This is a Theta model.</p>
 <p><img src="images/Network.png" alt="Our studied network"></p>
 
 
-<h2 id="Mathematical-Analysis">Mathematical Analysis</h2>
+
+
+<!-- Network Section -->
+<h2 id="Population-model-to-9D-model">Population model to 9D model</h2>
 <h3>How do we relate population to spiking model</h3>
 <p>
 So the first step is to consider a large population of \(N\) globally coupled quadratic integrate and fire neurons (QIF):
@@ -142,7 +145,7 @@ Using the Cauchy Residue theorem we get that
 $$
 r(t)=\frac{1}{\pi} \alpha(i, t)
 $$
-so that all that wee need to do is study our system at a single value of $\xi=i$. Let $w(i, t)=b(t)+i a(t)$ and derive
+so that all that wee need to do is study our system at a single value of \(\xi=i\). Let \(w(i, t)=b(t)+i a(t)\) and derive
 $$
 \begin{aligned}
 \tau_m a_t & =2 a b+\Delta, \\
@@ -150,10 +153,51 @@ $$
 \tau_s S_t & =-S+\frac{a}{\pi}
 \end{aligned}
 $$
+
+Hence we get two equivalent model from QIF 
+$$
+\tau_m \frac{d V_j}{d t}=V_j^2+\mu(t)+\Delta \xi_j+g S
+$$ 
+
+to 
+
+$$
+\begin{aligned}
+\tau_m a_t & =2 a b+\Delta, \\
+\tau_m b_t & =b^2-a^2+\mu+g S \\
+\tau_s S_t & =-S+\frac{a}{\pi}
+\end{aligned}
+$$
+
+Then we used our theta transformation for spiking neurons and simulated our model with it.
 </p>
 
 
 
+
+
+
+
+<h2 id="Mathematical-Analysis-for-Bifurcation">Mathematical Analysis for Bifurcation</h2>
+\begin{theorem}
+    Note that $\Delta \geq 0$, but $\mu, g$ can be any sign and $\tau_{m, s}>0$. Now you are all set to do the following three things.
+1. Suppose that $\tau_m \ll \tau_s$ and prove that there can be no limit cycles by letting $\tau_m=0$ and solving for $a$ and plugging into the equation for $S$.
+2. Suppose $\tau_s \ll \tau_m$ so that you can set $S=a / \pi$. Plug this into the $(a, b)$ system and show there is no Hopf bifurcation (HB) possible. That is consider:
+$$
+\begin{aligned}
+& \tau_m a_t=2 a b+\Delta, \\
+& \tau_m b_t=b^2-a^2+\mu+g a / \pi .
+\end{aligned}
+$$
+
+Prove that there is no HB, i.e., there is actually no limit cycle.
+
+Let $(\bar{a}, \bar{b}, \widehat{S})$ be a fixed point and suppose $g<0$. Find conditions for which there is the possibility of a HB for the full 3 D system and compute the bifurcation diagram numerically. You will need to use the Routh-Hurwitz (RH) criteria. Specifically, given a characteristic polynomial:
+$$
+\lambda^3+c_2 \lambda^2+c_1 \lambda+c_0=0
+$$
+$\mathrm{RH}$ says that there are imaginary eigenvalues if and only if $c_2, c_0>0$ and $c_1 c_2=c_0$.
+\end{theorem}
 
    
     
