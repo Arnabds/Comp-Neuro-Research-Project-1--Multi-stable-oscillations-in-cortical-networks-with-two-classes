@@ -211,8 +211,8 @@ $$
 \end{aligned}
 $$
 for excitatory, inhibitory and somatostatin we simulated them over XPPAut
-    ```
-    
+
+<pre><code>    
     ae'=(2*ae*be+dele)/tme
     be'=(be^2-ae^2+gee*se-gie*si-ld*gse*ss+mue)/tme
     se'=(-se+ae/pi)/taue
@@ -242,7 +242,8 @@ for excitatory, inhibitory and somatostatin we simulated them over XPPAut
     
     @ total=4000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
     d 
-    ```
+</code></pre>
+
 The mathematical version of our model is given by,
 
 \begin{align*} 
