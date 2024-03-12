@@ -268,7 +268,7 @@ The values are given for the bifurcation diagram,
     <li>\(\tau_{me}\): Time constant related to amplitude variables\(=20\)</li>
     <li>\(\tau_{mi}\): Time constant related to amplitude variables\(=10\)</li>
     <li>\(\tau_{ms}\): Time constant related to amplitude variables\(=10\)</li>
-    <li>\(g_{ee}\): Interaction strengths or connectivity coefficients between excitatory neurons\)=2\)</li>
+    <li>\(g_{ee}\): Interaction strengths or connectivity coefficients between excitatory neurons\(=2\)</li>
     <li>\(g_{ie}\): Interaction strengths or coupling parameter from i to e\(=1\)</li>
     <li>\(g_{se}\): Interaction strengths or coupling parameter from s to e\(=2\)</li>
     <li>\(g_{ei}\): Interaction strengths or coupling parameter from e to i\(=2\)</li>
@@ -285,6 +285,7 @@ The values are given for the bifurcation diagram,
     <li>\(\delta_{s}\): An external input or driving force affecting the inhibitory population \(a_s=0.1\)</li>
     <li>\(\lambda\): Parameter that influence synaptic activity\(=0.85\)</li>
 </ul>
+  <p><img src="images/muevsld.png" alt="bifurcation diagrams"></p>
 
 
 
