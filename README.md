@@ -290,15 +290,6 @@ The values are given for the bifurcation diagram,
 </p>
 
 <p>Similarly we have introduced \(\gamma\) to control inhibition to excitation and inhibition to inhibition and simulated \(\mu_{e}\) vs \(\gamma\) and \(\lambda\) vs \(\gamma\)
-<div>
-  <img src="images/muevsgm.png" alt="bifurcation diagram" style="display: inline-block; margin-right: 10px;">
-  <img src="images/ldvsgm.png" alt="bifurcation diagram" style="display: inline-block;">
-</div>
-<div>
-  <img src="images/muevsgm.png" alt="Bifurcation diagram 1" style="width: 50%; float: left; padding-right: 10px;" /><img src="images/ldvsgm.png" alt="Bifurcation diagram 2" style="width: 50%; float: left; padding-left: 10px;" />
-</div>
-<div style="clear: both;"></div>
-
 <table>
   <tr>
     <td>
