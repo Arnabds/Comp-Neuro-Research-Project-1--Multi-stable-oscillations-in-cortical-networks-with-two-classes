@@ -66,7 +66,7 @@ The input current is 30 and 50 at time 50 and 300.
 
   <!-- Theta Section -->
 <h2 id="Theta-model">Theta model</h2>
-<p>If we put $𝑢=\tan⁡\frac{𝜃}{2}$ then our equation $$\tau \frac{𝑑𝑢}{𝑑𝑡}=𝑢^2−𝑎^2+𝐼$$ will become
+<p>If we put \(𝑢=\tan⁡\frac{𝜃}{2}\) then our equation $$\tau \frac{𝑑𝑢}{𝑑𝑡}=𝑢^2−𝑎^2+𝐼$$ will become
 $$\tau \frac{𝑑\theta}{𝑑𝑡}=(1−\sin⁡\theta)−𝑎^2 (\cos⁡\theta+1)+𝐼(\cos⁡\theta+1)$$
 This is a Theta model.</p>
 
@@ -82,11 +82,11 @@ This is a Theta model.</p>
 <h2 id="Mathematical-Analysis">Mathematical Analysis</h2>
 <h3>How do we relate population to spiking model</h3>
 <p>
-So the first step is to consider a large population of $N$ globally coupled quadratic integrate and fire neurons (QIF):
+So the first step is to consider a large population of \(N\) globally coupled quadratic integrate and fire neurons (QIF):
 $$
 \tau_m \frac{d V_j}{d t}=V_j^2+\mu(t)+\Delta \xi_j+g S
 $$
-where $\mu(t)$ is global (to every neuron) drive, $\Delta$ is a heterogeneity strength, $\xi_j$ is taken from some symmetric distribution centered at $0, q(\xi)$, but fixed in time, and $S$ satisfies:
+where \(\mu(t)\) is global (to every neuron) drive, \(\Delta\) is a heterogeneity strength, \(\xi_j\) is taken from some symmetric distribution centered at \(0, q(\xi)\), but fixed in time, and \(S\) satisfies:
 $$
 \tau_s \frac{d S}{d t}=-S+\frac{1}{N} \sum_{j=1}^N \sum_k \delta\left(t-t_j^k\right)\tau_m .
 $$
@@ -96,12 +96,12 @@ The times \(t_j^k\) satisfy
 $$
 \lim _{t \rightarrow t_j^k} V_j(t)=+\infty
 $$
-and are the times that neuron $j$ fires a spike and $V_j$ is set to $-\infty$. So every neuron is connected to every other one through the synaptic drive, gS. Let $P(V, \xi, t)$ denote the probability density for the voltages. That is $P(V, \xi, t)$ is the probability of a randomly chosen neuron having a voltage $v$ and hetereogeneity, $\xi$ at time $t$. Let \(f(V, \xi, t)=V^2+\mu(t)+\Delta \xi+g S\). Then, the probability density evolves as:
+and are the times that neuron \(j\) fires a spike and \(V_j\) is set to \(-\infty\). So every neuron is connected to every other one through the synaptic drive, gS. Let \(P(V, \xi, t)\) denote the probability density for the voltages. That is \(P(V, \xi, t)\) is the probability of a randomly chosen neuron having a voltage \(v\) and hetereogeneity, \(\xi\) at time \(t\). Let \(f(V, \xi, t)=V^2+\mu(t)+\Delta \xi+g S\). Then, the probability density evolves as:
 \begin{equation}
     \tau_m \frac{\partial P(V, \xi, t)}{\partial t}+\frac{\partial}{\partial V}(f(V, \xi, t) P(V, \xi, t))=0
 \end{equation}
 
-The flux $J(V, \xi, t) =\frac{f(V, \xi, t) P(V, \xi, t)}{\tau_m}$ is the rate at which a neuron crosses $V$. The firing rate of a neuron with parameter $\xi$ at time $t$ is
+The flux \(J(V, \xi, t) =\frac{f(V, \xi, t) P(V, \xi, t)}{\tau_m}\) is the rate at which a neuron crosses \(V\). The firing rate of a neuron with parameter \(\xi\) at time \(t\) is
 $$
 R(\xi, t)=\lim _{V \rightarrow \infty} J(V, \xi, t)
 $$
