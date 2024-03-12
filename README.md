@@ -98,7 +98,7 @@ $$
 $$
 and are the times that neuron \(j\) fires a spike and \(V_j\) is set to \(-\infty\). So every neuron is connected to every other one through the synaptic drive, gS. Let \(P(V, \xi, t)\) denote the probability density for the voltages. That is \(P(V, \xi, t)\) is the probability of a randomly chosen neuron having a voltage \(v\) and hetereogeneity, \(\xi\) at time \(t\). Let \(f(V, \xi, t)=V^2+\mu(t)+\Delta \xi+g S\). Then, the probability density evolves as:
 \begin{equation}
-    \tau_m \frac{\partial P(V, \xi, t)}{\partial t}+\frac{\partial}{\partial V}(f(V, \xi, t) P(V, \xi, t))=0
+   (1) \tau_m \frac{\partial P(V, \xi, t)}{\partial t}+\frac{\partial}{\partial V}(f(V, \xi, t) P(V, \xi, t))=0
 \end{equation}
 
 The flux \(J(V, \xi, t) =\frac{f(V, \xi, t) P(V, \xi, t)}{\tau_m}\) is the rate at which a neuron crosses \(V\). The firing rate of a neuron with parameter \(\xi\) at time \(t\) is
@@ -110,6 +110,20 @@ $$
 r(t)=\int_{-\infty}^{\infty} q(\xi) R(\xi, t) d \xi .
 $$
 where $$q(\xi)=\frac{1}{\pi}\frac{1}{1+\xi^2}$$
+
+We make the ansatz that
+$$
+P(V, \xi, t)=\frac{1}{\pi} \frac{\alpha(\xi, t)}{(V-\beta(\xi, t))^2+\alpha(\xi, t)^2}
+$$
+
+this function satisfies Eq. (1) if and only:
+$$
+\begin{aligned}
+& \tau_m \frac{\partial \alpha}{\partial t}=2 \alpha \beta \\
+& \tau_m \frac{\partial \beta}{\partial t}=\beta^2-\alpha^2+\mu+\Delta \xi+g S .
+\end{aligned}
+$$
+
 </p>
 
 
