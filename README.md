@@ -200,6 +200,52 @@ $$
 $\mathrm{RH}$ says that there are imaginary eigenvalues if and only if \(c_2, c_0>0\) and \(c_1 c_2=c_0\).
 </p>
 
+
+<h2 id="Simulation">Simulation</h2>
+<p>Now we are trying simulate what we did mathematically. Hence getting our simpler 9D model that we get 
+$$
+\begin{aligned}
+\tau_m a_t & =2 a b+\Delta, \\
+\tau_m b_t & =b^2-a^2+\mu+g S \\
+\tau_s S_t & =-S+\frac{a}{\pi}
+\end{aligned}
+$$
+for excitatory, inhibitory and somatostatin we simulated them over XPPAut
+```
+    ae'=(2*ae*be+dele)/tme
+    be'=(be^2-ae^2+gee*se-gie*si-ld*gse*ss+mue)/tme
+    se'=(-se+ae/pi)/taue
+    
+    ai'=(2*ai*bi+deli)/tmi
+    bi'=(bi^2-ai^2+gei*se-gii*si-ld*gsi*ss+mui)/tmi
+    si'=(-si+ai/pi)/taui
+    
+    as'=(2*as*bs+dels)/tms
+    bs'=(bs^2-as^2+ges*se-gis*si-gss*ss+mus)/tms
+    ss'=(-ss+as/pi)/taus
+    
+    #for bifurcation gsi=.5 and mue=0
+    Param mue=0,ld=0.85
+    par taus=15
+    par gee=1.5,gei=2,ges=4.25 
+    par gie=1,gii=.5,gis=0
+    par gse=2,gsi=0.5,gss=0
+    par tme=20,tmi=10,tms=10
+    par taue=2,taui=7.5
+    Par mui=-.5,mus=-2
+    par dele=.1,deli=.1,dels=.1
+    
+    #Auto
+    @ ntst=60, npr=500, nmax=2000, autoxmin=-0.1, autoymin=-0.1
+    @ autoxmax=4, autoymax=2, ds=.05, dsmin=0.001, dsmax=0.05, parmin=0, parmax=3.9
+    
+    @ total=4000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
+    d
+```
+
+Here 
+</p>
+
    
     
 
