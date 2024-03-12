@@ -287,12 +287,13 @@ The values are given for the bifurcation diagram,
 </ul>
   <p><img src="images/muevsld.png" alt="bifurcation diagrams"></p>
   <figcaption>Two parameters and the corresponding one-parameter bifurcation diagram. We have done all our simulations with \(ld=\lambda=0.85\). Initially, we were trying to track the 2par vs 1par diagram when the left-hand side is two-parameter diagrams and we have drawn the line corresponding to \(\lambda=0.85,0,0.5,0.73,1.5\) and then on the right-hand hand the corresponding one-parameter bifurcation diagrams. In a two-parameter diagram the black curves correspond to the fold limit cycle and the blues are Hopf bifurcation points. In a one-parameter diagram, the reds correspond to the stable equilibrium point and the blacks correspond to the unstable equilibrium point, the blues are unstable limit cycles and the greens are stable limit cycles. We have also given the numbering for lambda=0.27,1,1.5 so that we can see hold and Hopf bifurcation side by side. For example, for lambda=1.5 we can match the numbers 1(fold limit cycle),2(fold limit cycle),3(fold limit cycle),4(Hopf bifurcation),5(fold limit cycle),6(Hopf bifurcation),7(Hopf bifurcation),8(fold limit cycle),9(fold limit cycle) matched in colors.</figcaption>
-
-
-
-
 </p>
 
+<p>Similarly we have introduced \(\gamma\) to control inhibition to excitation and inhibition to inhibition and simulated \(\mu_{e}\) vs \(\gamma\) and \(\lambda\) vs \(\gamma\)
+<p><img src="images/muevsgm.png" alt="bifurcation diagrams"></p>
+<p><img src="images/ldvsgm.png" alt="bifurcation diagrams"></p>
+
+</p>
    
     
 
