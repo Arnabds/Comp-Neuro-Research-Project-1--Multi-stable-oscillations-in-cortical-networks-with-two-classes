@@ -179,10 +179,9 @@ Then we used our theta transformation for spiking neurons and simulated our mode
 
 
 <h2 id="Mathematical-Analysis-for-Bifurcation">Mathematical Analysis for Bifurcation</h2>
-\begin{theorem}
-    Note that $\Delta \geq 0$, but $\mu, g$ can be any sign and $\tau_{m, s}>0$. Now you are all set to do the following three things.
-1. Suppose that $\tau_m \ll \tau_s$ and prove that there can be no limit cycles by letting $\tau_m=0$ and solving for $a$ and plugging into the equation for $S$.
-2. Suppose $\tau_s \ll \tau_m$ so that you can set $S=a / \pi$. Plug this into the $(a, b)$ system and show there is no Hopf bifurcation (HB) possible. That is consider:
+Note that \(\Delta \geq 0\), but \(\mu, g\) can be any sign and \(\tau_{m, s}>0\). Now you are all set to do the following three things.
+1. Suppose that \(\tau_m \ll \tau_s\) and prove that there can be no limit cycles by letting \(\tau_m=0\) and solving for \(a\) and plugging into the equation for \(S\).
+2. Suppose \(\tau_s \ll \tau_m\) so that you can set \(S=a / \pi\). Plug this into the \((a, b)\) system and show there is no Hopf bifurcation (HB) possible. That is considering:
 $$
 \begin{aligned}
 & \tau_m a_t=2 a b+\Delta, \\
@@ -190,13 +189,13 @@ $$
 \end{aligned}
 $$
 
-Prove that there is no HB, i.e., there is actually no limit cycle.
+Then there is no HB, i.e., there is actually no limit cycle.
 
-Let $(\bar{a}, \bar{b}, \widehat{S})$ be a fixed point and suppose $g<0$. Find conditions for which there is the possibility of a HB for the full 3 D system and compute the bifurcation diagram numerically. You will need to use the Routh-Hurwitz (RH) criteria. Specifically, given a characteristic polynomial:
+Let \((\bar{a}, \bar{b}, \widehat{S})\) be a fixed point and suppose \(g<0\). Find conditions for which there is the possibility of a HB for the full 3D system and compute the bifurcation diagram numerically. You will need to use the Routh-Hurwitz (RH) criteria. Specifically, given a characteristic polynomial:
 $$
 \lambda^3+c_2 \lambda^2+c_1 \lambda+c_0=0
 $$
-$\mathrm{RH}$ says that there are imaginary eigenvalues if and only if $c_2, c_0>0$ and $c_1 c_2=c_0$.
+$\mathrm{RH}$ says that there are imaginary eigenvalues if and only if \(c_2, c_0>0\) and \(c_1 c_2=c_0\).
 \end{theorem}
 
    
