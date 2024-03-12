@@ -310,7 +310,6 @@ The values are given for the bifurcation diagram,
 \(\mu_i=-.5,\mu_s=-2, \delta_e=0.1,\delta_i=0.1,\delta_s=0.1\) Hence, we started in the bigger limit cycle. Next, we injected inhibition ampi=3 at t=1000 to go to the lower limit cycle then we injected inhibition ampe=6 at t=3000 to go to the bigger limit cycle and lastly, we injected inhibition amps=4 at t=6000 to go to the lower limit cycle again. Here the duration of the impulse is wid=200.</figcaption>
 </p>
 
-</p>
    
     
 
