@@ -257,32 +257,37 @@ a_s'&=\frac{1}{\tau_{ms}}(2a_sb_s+\delta_s)\\
 b_s'&=\frac{1}{\tau_{ms}}(b_s^2-a_s^2+g_{es}s_e-g_{is}s_i- g_{ss}ss+\mu_s).
 \end{align*}
 
-Here $s'=\dv[s]t.$
-\mbox{}
+Here \(s'=\frac{ds}{dt}.\)
+
 The values are given for the bifurcation diagram,
-\nomenclature{$\tau_{e}$}{Time constant for the excitatory state$=2$}
-\nomenclature{$\tau_i$}{Time constant for the inhibitory state$=7.5$}
-\nomenclature{$\tau_s$}{Time constant for this component's state$=15$}
-\nomenclature{$\tau_{me}$}{Time constant related to amplitude variables$=20$}
-\nomenclature{$\tau_{mi}$}{Time constant related to amplitude variables$=10$}
-\nomenclature{$\tau_{ms}$}{Time constant related to amplitude variables$=10$}
-\nomenclature{$g_{ee}$}{Interaction strengths or connectivity coefficients between excitatory neurons$=2$}
-\nomenclature{$g_{ie}$}{Interaction strengths or coupling parameter from i to e$=1$}
-\nomenclature{$g_{se}$}{Interaction strengths or coupling parameter from s to e$=2$}
-\nomenclature{$g_{ei}$}{Interaction strengths or coupling parameter from e to i$=2$}
-\nomenclature{$g_{ii}$}{Interaction strengths or connectivity coefficients between inhibitory neurons$=0.5$}
-\nomenclature{$g_{si}$}{Interaction strengths or coupling parameter from s to i$=0.5$}
-\nomenclature{$g_{es}$}{Interaction strengths or coupling parameter from e to s$=4.25$}
-\nomenclature{$g_{is}$}{Interaction strengths or coupling parameter from i to s$=0$}
-\nomenclature{$g_{ss}$}{Interaction strengths or connectivity coefficients between somatostatin neurons$=0$}
-\nomenclature{$\mu_{e}$}{External input to the excitatory population$=0$}
-\nomenclature{$\mu_{i}$}{External input to the inhibitory population$=-0.5$}
-\nomenclature{$\mu_{s}$}{External input to this component$=-2$}
-\nomenclature{$\delta_{e}$}{An external input or driving force affecting the excitatory population $a_e=0.1$}
-\nomenclature{$\delta_{i}$}{An external input or driving force affecting the inhibitory population $a_i=0.1$}
-\nomenclature{$\delta_{s}$}{An external input or driving force affecting the inhibitory population $a_s=0.1$}
-\nomenclature{$\lambda$}{Parameter that influence synaptic activity$=0.85$}
-\printnomenclature
+<ul>
+    <li>\(\tau_{e}\): Time constant for the excitatory state\(=2\)</li>
+    <li>\(\tau_i\): Time constant for the inhibitory state\(=7.5\)}</li>
+    <li>\(\tau_s\): Time constant for this component's state\(=15\)</li>
+    <li>\(\tau_{me}\): Time constant related to amplitude variables\(=20\)</li>
+    <li>\(\tau_{mi}\): Time constant related to amplitude variables\(=10\)</li>
+    <li>\(\tau_{ms}\): Time constant related to amplitude variables\(=10\)</li>
+    <li>\(g_{ee}\): Interaction strengths or connectivity coefficients between excitatory neurons\)=2\)</li>
+    <li>\(g_{ie}\): Interaction strengths or coupling parameter from i to e\(=1\)</li>
+    <li>\(g_{se}\): Interaction strengths or coupling parameter from s to e\(=2\)</li>
+    <li>\(g_{ei}\): Interaction strengths or coupling parameter from e to i\(=2\)</li>
+    <li>\(g_{ii}\): Interaction strengths or connectivity coefficients between inhibitory neurons\(=0.5\)</li>
+    <li>\(g_{si}\): Interaction strengths or coupling parameter from s to i\(=0.5\)</li>
+    <li>\(g_{es}\): Interaction strengths or coupling parameter from e to s\(=4.25\)</li>
+    <li>\(g_{is}\): Interaction strengths or coupling parameter from i to s\(=0\)</li>
+    <li>\(g_{ss}\): Interaction strengths or connectivity coefficients between somatostatin neurons\(=0\)</li>
+    <li>\(\mu_{e}\): External input to the excitatory population\(=0\)</li>
+    <li>\(\mu_{i}\): External input to the inhibitory population\(=-0.5\)</li>
+    <li>\(\mu_{s}\): External input to this component\(=-2\)</li>
+    <li>\(\delta_{e}\): An external input or driving force affecting the excitatory population \(a_e=0.1\)</li>
+    <li>\(\delta_{i}\): An external input or driving force affecting the inhibitory population \(a_i=0.1\)</li>
+    <li>\(\delta_{s}\): An external input or driving force affecting the inhibitory population \(a_s=0.1\)</li>
+    <li>\(\lambda\): Parameter that influence synaptic activity\(=0.85\)</li>
+</ul>
+
+
+
+
 </p>
 
    
