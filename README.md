@@ -16,6 +16,12 @@
   <li><a href="#Integrate-and-fire-model">Integrate and fire model</a></li>
   <li><a href="#Quadratic-Integrate-and-fire-model">Quadratic Integrate and fire model model</a></li>
   <li><a href="#Theta-model">Theta model</a></li>
+  <li><a href="#Network">Network</a></li>
+  <li><a href="#Population-model-to-9D-model">Population model to 9D model</a></li>
+  <li><a href="#Mathematical-Analysis-for-Bifurcation">Mathematical Analysis for Bifurcation</a></li>
+  <li><a href="#Simulation">Simulation</a></li>
+  <li><a href="#References">References</a></li>
+
 </ul>
 
 
