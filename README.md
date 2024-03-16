@@ -323,8 +323,9 @@ The values are given for the bifurcation diagram,
 <h2 id="References">References</h2>
 <ol>
   <li> <a href="[Theta model](https://en.wikipedia.org/wiki/Theta_model)"> [wiki](Theta model)</a></li>
-  <li>Second item in the list</li>
+  <li><a href="[QIF model]([https://en.wikipedia.org/wiki/Theta_model](https://en.wikipedia.org/wiki/Quadratic_integrate_and_fire))"> [wiki](QIF model)</a></li>
   <li>Third item in the list</li>
+    
 </ol>
 
 
