@@ -321,8 +321,8 @@ The values are given for the bifurcation diagram,
 
 
 <h2 id="References">References</h2>
-<ol start="50">
-  <li> <a href="[Theta model](https://en.wikipedia.org/wiki/Theta_model)"> [wiki](https://en.wikipedia.org/wiki/Theta_model)</a></li>
+<ol>
+  <li> <a href="[Theta model](https://en.wikipedia.org/wiki/Theta_model)"> [wiki](Theta model)</a></li>
   <li>Second item in the list</li>
   <li>Third item in the list</li>
 </ol>
