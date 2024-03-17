@@ -186,8 +186,8 @@ Then we used our theta transformation for spiking neurons and simulated our mode
 
 <h2 id="Mathematical-Analysis-for-Bifurcation">Mathematical Analysis for Bifurcation</h2>
 Note that \(\Delta \geq 0\), but \(\mu, g\) can be any sign and \(\tau_{m, s}>0\). Now you are all set to do the following three things.
-<p> Suppose that \(\tau_m \ll \tau_s\) and prove that there can be no limit cycles by letting \(\tau_m=0\) and solving for \(a\) and plugging into the equation for \(S\).</p>
-</p> Suppose \(\tau_s \ll \tau_m\) so that you can set \(S=a / \pi\). Plug this into the \((a, b)\) system and show there is no Hopf bifurcation (HB) possible. That is considering:
+<p> Suppose that \(\tau_m \ll \tau_s\) then there can be no limit cycles by letting \(\tau_m=0\) and solving for \(a\) and plugging into the equation for \(S\).</p>
+</p> Suppose \(\tau_s \ll \tau_m\) so that you can set \(S=a / \pi\). Plug this into the \((a, b)\) system and we can show there is no Hopf bifurcation (HB) possible. That is considering:
 $$
 \begin{aligned}
 & \tau_m a_t=2 a b+\Delta, \\
@@ -199,59 +199,16 @@ Then there is no HB, i.e., there is actually no limit cycle.
 </p>
 
 </p>
-Let \((\bar{a}, \bar{b}, \widehat{S})\) be a fixed point and suppose \(g<0\). Find conditions for which there is the possibility of a HB for the full 3D system and compute the bifurcation diagram numerically. You will need to use the Routh-Hurwitz (RH) criteria. Specifically, given a characteristic polynomial:
+Let \((\bar{a}, \bar{b}, \widehat{S})\) be a fixed point and suppose \(g<0\). Then there are some conditions we proved for which there is the possibility of a HB for the full 3D system and we computed the bifurcation diagram numerically. We have use the Routh-Hurwitz (RH) criteria. Specifically, given a characteristic polynomial:
 $$
 \lambda^3+c_2 \lambda^2+c_1 \lambda+c_0=0
 $$
-$\mathrm{RH}$ says that there are imaginary eigenvalues if and only if \(c_2, c_0>0\) and \(c_1 c_2=c_0\).
+Routh-Hurwitz says that there are imaginary eigenvalues if and only if \(c_2, c_0>0\) and \(c_1 c_2=c_0\).
 </p>
 
 
 <h2 id="Simulation">Simulation</h2>
-<p>Now we are trying simulate what we did mathematically. Hence getting our simpler 9D model that we get 
-$$
-\begin{aligned}
-\tau_m a_t & =2 a b+\Delta, \\
-\tau_m b_t & =b^2-a^2+\mu+g S \\
-\tau_s S_t & =-S+\frac{a}{\pi}
-\end{aligned}
-$$
-for excitatory, inhibitory and somatostatin we simulated them over XPPAut
-
-<pre><code>    
-    ae'=(2*ae*be+dele)/tme
-    be'=(be^2-ae^2+gee*se-gie*si-ld*gse*ss+mue)/tme
-    se'=(-se+ae/pi)/taue
-   
-    ai'=(2*ai*bi+deli)/tmi
-    bi'=(bi^2-ai^2+gei*se-gii*si-ld*gsi*ss+mui)/tmi
-    si'=(-si+ai/pi)/taui
-    
-    as'=(2*as*bs+dels)/tms
-    bs'=(bs^2-as^2+ges*se-gis*si-gss*ss+mus)/tms
-    ss'=(-ss+as/pi)/taus
-    
-    #for bifurcation gsi=.5 and mue=0
-    Param mue=0,ld=0.85
-    par taus=15
-    par gee=1.5,gei=2,ges=4.25 
-    par gie=1,gii=.5,gis=0
-    par gse=2,gsi=0.5,gss=0
-    par tme=20,tmi=10,tms=10
-    par taue=2,taui=7.5
-    Par mui=-.5,mus=-2
-    par dele=.1,deli=.1,dels=.1
-    
-    #Auto
-    @ ntst=60, npr=500, nmax=2000, autoxmin=-0.1, autoymin=-0.1
-    @ autoxmax=4, autoymax=2, ds=.05, dsmin=0.001, dsmax=0.05, parmin=0, parmax=3.9
-    
-    @ total=4000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
-    d 
-</code></pre>
-
-The mathematical version of our model is given by,
-
+<p>Now we are trying to simulate what we did mathematically. Hence getting our simpler 9D model that we get 
 \begin{align*} 
 s_e'&=\frac{1}{\tau_e}\left(-s_e+\frac{a_e}{\pi}\right)\\
 a_e'&=\frac{1}{\tau_{me}}(2a_eb_e+\delta_e)\\
@@ -290,7 +247,41 @@ The values are given for the bifurcation diagram,
     <li>\(\delta_{i}\): An external input or driving force affecting the inhibitory population \(a_i=0.1\)</li>
     <li>\(\delta_{s}\): An external input or driving force affecting the inhibitory population \(a_s=0.1\)</li>
     <li>\(\lambda\): Parameter that influence synaptic activity\(=0.85\)</li>
-</ul>
+</ul> we simulated them over XPPAut
+
+<pre><code>    
+    ae'=(2*ae*be+dele)/tme
+    be'=(be^2-ae^2+gee*se-gie*si-ld*gse*ss+mue)/tme
+    se'=(-se+ae/pi)/taue
+   
+    ai'=(2*ai*bi+deli)/tmi
+    bi'=(bi^2-ai^2+gei*se-gii*si-ld*gsi*ss+mui)/tmi
+    si'=(-si+ai/pi)/taui
+    
+    as'=(2*as*bs+dels)/tms
+    bs'=(bs^2-as^2+ges*se-gis*si-gss*ss+mus)/tms
+    ss'=(-ss+as/pi)/taus
+    
+    #for bifurcation gsi=.5 and mue=0
+    Param mue=0,ld=0.85
+    par taus=15
+    par gee=1.5,gei=2,ges=4.25 
+    par gie=1,gii=.5,gis=0
+    par gse=2,gsi=0.5,gss=0
+    par tme=20,tmi=10,tms=10
+    par taue=2,taui=7.5
+    Par mui=-.5,mus=-2
+    par dele=.1,deli=.1,dels=.1
+    
+    #Auto
+    @ ntst=60, npr=500, nmax=2000, autoxmin=-0.1, autoymin=-0.1
+    @ autoxmax=4, autoymax=2, ds=.05, dsmin=0.001, dsmax=0.05, parmin=0, parmax=3.9
+    
+    @ total=4000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
+    d 
+</code></pre>
+
+
   <p><img src="images/muevsld.png" alt="bifurcation diagrams"></p>
   <figcaption>Two parameters and the corresponding one-parameter bifurcation diagram. We have done all our simulations with \(ld=\lambda=0.85\). Initially, we were trying to track the 2par vs 1par diagram when the left-hand side is two-parameter diagrams and we have drawn the line corresponding to \(\lambda=0.85,0,0.5,0.73,1.5\) and then on the right-hand hand the corresponding one-parameter bifurcation diagrams. In a two-parameter diagram the black curves correspond to the fold limit cycle and the blues are Hopf bifurcation points. In a one-parameter diagram, the reds correspond to the stable equilibrium point and the blacks correspond to the unstable equilibrium point, the blues are unstable limit cycles and the greens are stable limit cycles. We have also given the numbering for lambda=0.27,1,1.5 so that we can see hold and Hopf bifurcation side by side. For example, for lambda=1.5 we can match the numbers 1(fold limit cycle),2(fold limit cycle),3(fold limit cycle),4(Hopf bifurcation),5(fold limit cycle),6(Hopf bifurcation),7(Hopf bifurcation),8(fold limit cycle),9(fold limit cycle) matched in colors.</figcaption>
 </p>
