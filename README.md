@@ -45,7 +45,7 @@
   (generates an action potential) and then resets its membrane potential. This model captures the basic behavior
    of neuronal spiking in response to synaptic inputs.
    The right hand side RC circuit model 
-  $$\tau \frac{dy}{dx}=-(u-u_{rest})+RI$$
+  $$\tau \frac{du}{dx}=-(u-u_{rest})+RI$$
 <p>
   <p><img src="images/IF.png" alt="Integrate-and-fire-model w.r.t current inputs"></p>
 
