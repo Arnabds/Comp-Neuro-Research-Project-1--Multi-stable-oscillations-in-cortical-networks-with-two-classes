@@ -1,0 +1,170 @@
+\begin{thebibliography}{10}
+
+\bibitem{GX2014Gamma}
+Buzs{\'a}ki G, Wang X.
+\newblock Mechanisms of gamma oscillations.
+\newblock Current Opinion in Neurobiology. 2014;.
+
+\bibitem{yi}
+Rich S, Rich S, Zochowski M.
+\newblock Dichotomous Dynamics in E-I Networks with Strongly and Weakly Intra-connected Inhibitory Neurons.
+\newblock Front Neural Circuits. 2017;.
+
+\bibitem{mi}
+Kriener B, Hu H, Vervaeke K.
+\newblock Parvalbumin interneuron dendrites enhance gamma oscillations.
+\newblock Cell Reports. 2022;.
+
+\bibitem{chen2017somatostatin}
+Chen G, Yuan~Zhang XL, Zhao X, Ye Q, Lin Y, Tao HW, et~al.
+\newblock Distinct Inhibitory Circuits Orchestrate Cortical beta and gamma Band Oscillations.
+\newblock Neuron. 2017;.
+
+\bibitem{yc}
+Antonoudiou P, Tan YL, Kontou G, Upton AL, Mann EO.
+\newblock Parvalbumin and Somatostatin Interneurons Contribute to the Generation of Hippocampal Gamma Oscillations.
+\newblock J Neurosci. 2020;.
+
+\bibitem{onorato2025gamma}
+Onorato I, Tzanou A, Schneider M, Uran C, Broggini AC, Vinck M.
+\newblock Distinct roles of PV and Sst interneurons in visually induced gamma oscillations.
+\newblock Cell Reports. 2025;44(3):115385.
+
+\bibitem{br}
+Ferguson BR, Gao WJ.
+\newblock PV Interneurons: Critical Regulators of E/I Balance for Prefrontal Cortex-Dependent Behavior and Psychiatric Disorders.
+\newblock Front Neural Circuits. 2018;.
+
+\bibitem{ABV}
+Derveer ABV, Bastos G, Ferrell AD, Gallimore CG, Greene ML, Holmes JT, et~al.
+\newblock A Role for Somatostatin-Positive Interneurons in Neuro-Oscillatory and Information Processing Deficits in Schizophrenia.
+\newblock Schizophr Bull. 2020;.
+
+\bibitem{pse}
+G~Pfurtscheller GE A Stancák~Jr.
+\newblock On the existence of different types of central beta rhythms below 30 Hz.
+\newblock ELSEVIER. 1997;.
+
+\bibitem{rkc}
+Anita K~Roopun LMC Mark A~Kramer.
+\newblock Period concatenation underlies interactions between gamma and beta rhythms in neocortex.
+\newblock Frontier in cellular neuroscience. 2008;.
+
+\bibitem{gk}
+Gelastopoulos A, Kopell NJ.
+\newblock Interactions of multiple rhythms in a biophysical network of neurons.
+\newblock Journal of Mathematical Neuroscience. 2020;.
+
+\bibitem{racine2021somatostatin}
+Racine AS, Michon FX, Laplante I, Lacaille JC.
+\newblock Somatostatin Contributes to Long-Term Potentiation at Excitatory Synapses onto Hippocampal Somatostatinergic Interneurons.
+\newblock Molecular Brain. 2021;.
+
+\bibitem{kopell2011neuronal}
+Kopell N, Whittington MA, K MA.
+\newblock Neuronal Assembly Dynamics in the Beta1 Frequency Range Permits Short-Term Memory.
+\newblock Proceedings of the National Academy of Sciences. 2011;.
+
+\bibitem{unknown2019parietal}
+Alexandros~Gelastopoulos MAW, Kopell NJ.
+\newblock Parietal Low Beta Rhythm Provides a Dynamical Substrate for a Working Memory Buffer.
+\newblock Journal of Neuroscience. 2019;.
+
+\bibitem{edwards24}
+Edwards MM, Rubin JE, Huang C.
+\newblock State modulation in spatial networks with three interneuron subtypes.
+\newblock bioRxiv. 2024;.
+
+\bibitem{FMM}
+Tahvili F, Vinck M, di~Volo M.
+\newblock PV and SOM cells play distinct causal roles in controlling network oscillations and stability.
+\newblock Cell Reports. 2025;44:116131.
+\newblock doi:{10.1016/j.celrep.2025.116131}.
+
+\bibitem{terwal2021}
+ter Wal M, Tiesinga PHE.
+\newblock Comprehensive characterization of oscillatory signatures in a model circuit with PV- and SOM-expressing interneurons.
+\newblock Biological Cybernetics. 2021;115(5):487--517.
+\newblock doi:{10.1007/s00422-021-00894-6}.
+
+\bibitem{montbrio}
+Montbri{\'o} E, Paz{\'o} D, Roxin A.
+\newblock Macroscopic description for networks of spiking neurons.
+\newblock Physical Review X. 2015;5(2):021028.
+
+\bibitem{wc72}
+Wilson HR, Cowan JD.
+\newblock Excitatory and inhibitory interactions in localized populations of model neurons.
+\newblock Biophysical journal. 1972;12(1):1--24.
+
+\bibitem{be79}
+Ermentrout G, Cowan JD.
+\newblock Temporal oscillations in neuronal nets.
+\newblock Journal of mathematical biology. 1979;7:265--280.
+
+\bibitem{borgers03}
+B{\"o}rgers C, Kopell N.
+\newblock Synchronization in networks of excitatory and inhibitory neurons with sparse, random connectivity.
+\newblock Neural computation. 2003;15(3):509--538.
+
+\bibitem{veit23}
+Veit J, Handy G, Mossing DP, Doiron B, Adesnik H.
+\newblock Cortical VIP neurons locally control the gain but globally control the coherence of gamma band rhythms.
+\newblock Neuron. 2023;111(3):405--417.
+
+\bibitem{bos20}
+Bos H, Miehl C, Oswald AMM, Doiron B.
+\newblock Untangling stability and gain modulation in cortical circuits with multiple interneuron classes.
+\newblock eLife. 2025;13:RP99808.
+
+\bibitem{ke86}
+Ermentrout GB, Kopell N.
+\newblock Parabolic bursting in an excitable system coupled with a slow oscillation.
+\newblock SIAM journal on applied mathematics. 1986;46(2):233--253.
+
+\bibitem{oa}
+Ott E, Antonsen TM.
+\newblock Low dimensional behavior of large systems of globally coupled oscillators.
+\newblock Chaos: An Interdisciplinary Journal of Nonlinear Science. 2008;18(3).
+
+\bibitem{lisman2013}
+Lisman JE, Jensen O.
+\newblock The theta-gamma neural code.
+\newblock Neuron. 2013;77(6):1002--1016.
+
+\bibitem{borgers05}
+B{\"o}rgers C, Kopell N.
+\newblock Effects of noisy drive on rhythms in networks of excitatory and inhibitory neurons.
+\newblock Neural computation. 2005;17(3):557--608.
+
+\bibitem{goldobin21}
+Goldobin DS.
+\newblock Mean-field models of populations of quadratic integrate-and-fire neurons with noise on the basis of the circular cumulant approach.
+\newblock Chaos: An Interdisciplinary Journal of Nonlinear Science. 2021;31(8).
+
+\bibitem{kopell11}
+Kopell N, Whittington MA, Kramer MA.
+\newblock Neuronal assembly dynamics in the beta1 frequency range permits short-term memory.
+\newblock Proceedings of the National Academy of Sciences. 2011;108(9):3779--3784.
+
+\bibitem{bw12}
+Buzs{\'a}ki G, Wang XJ.
+\newblock Mechanisms of gamma oscillations.
+\newblock Annual review of neuroscience. 2012;35(1):203--225.
+
+\bibitem{fernandez}
+Fernandez-Ruiz A, Sirota A, Lopes-dos Santos V, Dupret D.
+\newblock Over and above frequency: Gamma oscillations as units of neural circuit operations.
+\newblock Neuron. 2023;111(7):936--953.
+
+\bibitem{grishma}
+Palkar G, Wu Jy, Ermentrout B.
+\newblock The inhibitory control of traveling waves in cortical networks.
+\newblock PLOS Computational Biology. 2023;19(9):e1010697.
+
+\bibitem{xppaut}
+Ermentrout B.
+\newblock Simulating, analyzing, and animating dynamical systems: a guide to XPPAUT for researchers and students. vol.~14.
+\newblock SIAM; 2003.
+
+\end{thebibliography}
