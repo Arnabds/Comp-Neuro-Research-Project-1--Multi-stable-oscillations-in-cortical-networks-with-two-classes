@@ -1,0 +1,10 @@
+par mu=.5,a=1.2,b=.7,c=.1,q=-.1
+lam(r)=mu-a*r+b*r^2-c*r^3
+om(r)=1+q*r
+f(u,v)=u*lam(u^2+v^2)-v*om(u^2+v^2)
+g(u,v)=v*lam(u^2+v^2)+u*om(u^2+v^2)
+
+u'=f(u,v)
+v'=g(u,v)
+@ xp=u,yp=v,xlo=-3,xhi=3,ylo=-3,yhi=3
+d

@@ -1,0 +1,18 @@
+f(x)=sqrt(.5*(x+sqrt(x^2+d)))/pi
+se'=(-se+f(ge*gee*se-gi*gm*gie*si-gs*ld*gse*ss+mue))/taue
+si'=(-si+f(ge*gei*se-gi*gii*gm*si-gs*ld*gsi*ss+mui))/taui
+ss'=(-ss+f(ge*ges*se+mus))/taus
+#par mue=-.5 mui=-.5,mus=-4
+par mue=0 mui=0,mus=0
+par gm=.8,ld=1
+par ge=4.5,gi=3,gs=2
+par gee=1.5,gei=2,ges=4
+par gie=1,gii=0.5,gse=2,gsi=4
+par taue=2,taui=7.5,taus=20
+par d=.1
+@ ntst=60,npr=200,nmax=2000,autoxmin=-0.5,autoymin=0,autoxmax=3,autoymax=2,ds=.05
+@ dsmin=.001,dsmax=.05,parmin=-1,parmax=5
+@ xp=t,yp=se,xlo=-.05,xhi=4000,ylo=-.05,yhi=2
+@ total=4000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
+
+d

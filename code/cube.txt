@@ -1,0 +1,6 @@
+v'=v*(c-v)*(c+v)*(a-v)*(a+v)*(b-v)*(b+v)-w
+w'=v-gam*w
+par c=.5,a=1,b=1.6,gam=0
+@ xp=v,yp=w,xlo=-2.5,xhi=2.5,ylo=-10,yhi=10,nmesh=100
+@ total=200
+d

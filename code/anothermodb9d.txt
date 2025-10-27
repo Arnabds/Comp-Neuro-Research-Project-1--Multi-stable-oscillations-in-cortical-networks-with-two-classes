@@ -1,0 +1,44 @@
+bump(t)=heav(t)*heav(wid-t)
+ie(t)=ampe*bump(t-tone)
+ii(t)=ampi*bump(t-toni)
+is(t)=amps*bump(t-tons)
+
+ae'=(2*ae*be+dele)/tme
+be'=(be^2-ae^2+gee*se-gie*si-ld*gse*ss+mue+ie(t))/tme
+se'=(-se+ae/pi)/taue
+
+ai'=(2*ai*bi+deli)/tmi
+bi'=(bi^2-ai^2+gei*se-gii*si-ld*gsi*ss+mui+ii(t))/tmi
+si'=(-si+ai/pi)/taui
+
+as'=(2*as*bs+dels)/tms
+bs'=(bs^2-as^2+ges*se-gis*si-gss*ss+mus+is(t))/tms
+ss'=(-ss+as/pi)/taus
+
+#for bifurcation gsi=.5 and mue=0
+par mue=1.25,mui=-.5,mus=-2
+par gee=1.5,gei=2,ges=4.25 
+par gie=1,gii=.5,gis=0
+par gse=2,gsi=0.5,gss=0
+par tme=20,tmi=10,tms=10
+par taue=2,taui=7.5,taus=15
+par dele=.1,deli=.1,dels=.1
+Param ld=.85
+Par ampe=6, ampi=3, amps=4
+Par wid=200, tone=3000, toni=1000, tons=6000
+
+@ total=8000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
+d
+
+#ae'=(2*ae*be+dele)/tme
+#ai'=(2*ai*bi+deli)/tmi
+#as'=(2*as*bs+dels)/tms
+
+#be'=(be^2-ae^2+gee*se-gie*si-gse*ss+ie)/tme
+#bi'=(bi^2-ai^2+gei*se-gii*si-gsi*ss+ii)/tmi
+#bs'=(bs^2-as^2+ges*se-gis*si-gss*ss+is)/tms
+
+#se'=(-se+ae/pi)/taue
+#si'=(-si+ai/pi)/taui
+#ss'=(-ss+as/pi)/taus
+

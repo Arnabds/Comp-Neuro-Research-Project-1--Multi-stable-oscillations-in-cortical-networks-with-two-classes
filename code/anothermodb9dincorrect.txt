@@ -1,0 +1,45 @@
+bump(t)=heav(t)*heav(wid-t)
+ie(t)=ampe*bump(t-tone)
+ii(t)=ampi*bump(t-toni)
+is(t)=amps*bump(t-tons)
+
+ae1'=(2*ae1*be1+dele)/tme
+be1'=(be1^2-ae1^2+gee*(p*se1+(1-p)*se2)-gie*(p*si1+(1-p)*si2)-ld*gse*(p*ss1+(1-p)*ss2)+mue+ie(t))/tme
+se1'=(-(p*se1+(1-p)*se2)+ae1/pi)/taue
+
+ai1'=(2*ai1*bi1+deli)/tmi
+bi1'=(bi1^2-ai1^2+gei*(p*se1+(1-p)*se2)-gii*(p*si1+(1-p)*si2)-ld*gsi*(p*ss1+(1-p)*ss2)+mui+ii(t))/tmi
+si1'=(-(p*si1+(1-p)*si2)+ai1/pi)/taui
+
+as1'=(2*as1*bs1+dels)/tms
+bs1'=(bs1^2-as1^2+ges*(p*se1+(1-p)*se2)-gis*(p*si1+(1-p)*si2)-gss*(p*ss1+(1-p)*ss2)+mus+is(t))/tms
+ss1'=(-(ss1+(1-p)*ss2)+as1/pi)/taus
+
+ae2'=(2*ae2*be2+dele)/tme
+be2'=(be2^2-ae2^2+gee*(p*se1+(1-p)*se2)-gie*(p*si1+(1-p)*si2)-ld*gse*(p*ss1+(1-p)*ss2)+mue+ie(t))/tme
+se2'=(-(p*se1+(1-p)*se2)+ae2/pi)/taue
+
+ai2'=(2*ai2*bi2+deli)/tmi
+bi2'=(bi2^2-ai2^2+gei*(p*se1+(1-p)*se2)-gii*(p*si1+(1-p)*si2)-ld*gsi*(p*ss1+(1-p)*ss2)+mui+ii(t))/tmi
+si2'=(-(p*si1+(1-p)*si2)+ai2/pi)/taui
+
+as2'=(2*as2*bs2+dels)/tms
+bs2'=(bs2^2-as2^2+ges*(p*se1+(1-p)*se2)-gis*(p*si1+(1-p)*si2)-gss*(p*ss1+(1-p)*ss2)+mus+is(t))/tms
+ss2'=(-(ss1+(1-p)*ss2)+as2/pi)/taus
+
+#for bifurcation gsi=.5 and mue=0
+par mue=1.25,mui=-.5,mus=-2, p= 0.5
+par gee=1.5,gei=2,ges=4.25 
+par gie=1,gii=.5,gis=0
+par gse=2,gsi=0.5,gss=0
+par tme=20,tmi=10,tms=10
+par taue=2,taui=7.5,taus=15
+par dele=0.1,deli=0.1,dels=0.1
+Param ld=.85
+Par ampe=0, ampi=0, amps=0
+Par wid=600, tone=1000, toni=1000, tons=1000
+Init ae1 = 1.196257, be1 = 0.302558, se1 = 0.358599, ai1 = 0.165609, bi1 = -0.31882, si1 = 0.084618
+Init as1 = 0.069508, bs1 = -0.782826, ss1 = 0.035599
+
+@ total=4000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
+d6

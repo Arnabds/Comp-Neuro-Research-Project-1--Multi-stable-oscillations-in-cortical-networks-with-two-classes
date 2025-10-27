@@ -1,0 +1,65 @@
+#Core idea and the code is written by Bardman
+#Modified by Arnab
+#Date of getting good parameters
+
+#Theta Model
+
+table xie % 200 0 199 tan(-pi/2+pi*ran(1))
+@ autoeval=0
+
+#External current
+bump(t)=heav(t)*heav(wid-t)
+ie(t)=ampe*bump(t-tone)
+ii(t)=ampi*bump(t-toni)
+is(t)=amps*bump(t-tons)
+
+qpe[0..199]=qe[j]+dt*(1-cos(qe[j])+(1+cos(qe[j]))*(mue+ie(t*dt)+gee*se-gie*si-ld*gse*ss+ nze*normal(0,1)/sqrt(dt)+dele*xie([j])))/tme 
+fe[0..199]=qpe[j]>pi  
+fre=sum(0,199)of(shift(fe0,i'))/200
+se'=se-dt*se/taue+fre*tme/taue
+qe[0..199]'=qpe[j]-2*pi*fe[j]
+
+table xii % 200 0 199 tan(-pi/2+pi*ran(1))
+@ autoeval=0
+qpi[0..199]=qi[j]+dt*(1-cos(qi[j])+(1+cos(qi[j]))*(mui+ii(t*dt)+gei*se-gii*si-ld*gsi*ss+ nzi*normal(0,1)/sqrt(dt)+deli*xii([j])))/tmi
+fi[0..199]=qpi[j]>pi  
+fri=sum(0,199)of(shift(fi0,i'))/200
+si'=si-dt*si/taui+fri*tmi/taui
+qi[0..199]'=qpi[j]-2*pi*fi[j]
+
+table xis % 200 0 199 tan(-pi/2+pi*ran(1))
+@ autoeval=0
+qps[0..199]=qs[j]+dt*(1-cos(qs[j])+(1+cos(qs[j]))*(mus+is(t*dt)+ges*se-gis*si-gss*ss+ nzs*normal(0,1)/sqrt(dt)+dels*xis([j])))/tms
+fs[0..199]=qps[j]>pi  
+frs=sum(0,199)of(shift(fs0,i'))/200
+ss'=ss-dt*ss/taus+frs*tms/taus
+qs[0..199]'=qps[j]-2*pi*fs[j]
+
+
+#Parameters
+#Integrate till total*dt=4000
+
+par gee=2,gei=2,ges=4.25 
+par gie=1,gii=.5,gis=0
+par gse=2,gsi=0.5,gss=0
+par tme=20,tmi=10,tms=10
+par taue=2,taui=7.5,taus=15
+par mue=1.8,mui=-.5,mus=-2
+par dele=0.1,deli=0.1,dels=0.1
+Par nze=0, nzi=0, nzs=0
+Par ampe=0, ampi=0, amps=0
+Par wid=600, tone=1000, toni=1000, tons=1000
+Param ld=0.85
+par dt=.02
+
+
+
+#Define ae, be, ai, bi as parameters
+par ae=VALUE, be=VALUE, ai=VALUE, bi=VALUE
+
+
+@ total=200000,meth=discrete,nout=5 #Integrate till total*dt
+aux tt=t*dt
+@ xp=tt,yp=se,xhi=4000, yhi=4.7, ylo=-0.1
+@ bound=1000000
+d

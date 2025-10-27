@@ -1,0 +1,40 @@
+# Set up parameters
+param mu = 0.23
+param a = 1.2
+param b = 0.7
+param c = 0.1
+param q = 0.2
+param d = 0.05
+param e = 0.05
+
+r(u,v) = u^2+v^2
+lam(u,v) = mu - a*r(u,v) +b*r(u,v)^2 -c*r(u,v)^3  
+omeg(u,v) = 1+q*r(u,v)
+f(u,v) = lam(u,v)*u - omeg(u,v)*v
+g(u,v) = lam(u,v)*v + omeg(u,v)*u
+
+
+u[1..50]' = f(u[j],v[j]) + d*(u[j+1] - 2*u[j] + u[j-1]) - e*(v[j+1] - 2*v[j] + v[j-1])
+v[1..50]' = g(u[j],v[j]) + d*(v[j+1] - 2*v[j] + v[j-1]) - e*(u[j+1] - 2*u[j] + u[j-1])
+aux s[1..50]=sqrt(u[j]^2+v[j]^2)
+u0 = u1
+u51 = u50
+v0 = v1
+v51 = v50
+
+
+# Small limit cycle
+Init u[1..25] = 1.22769
+Init v[1..25] = 2.758064
+
+# Big limit cycle
+Init u[26..50] = 1.633846
+Init v[26..50] = 0.44516
+
+
+# Define plot settings
+@ total=100, dt=0.05
+@ xlo=-2, xhi=2, ylo=-2, yhi=2
+d
+
+

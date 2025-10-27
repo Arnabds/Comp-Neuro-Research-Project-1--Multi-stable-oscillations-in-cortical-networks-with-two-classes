@@ -1,0 +1,57 @@
+# This is the same code of anothermodb9dmixpool_couple.txt written in shorter and smarter way. I # got rid of ie, ii, is, 
+# ampe, ampi, amps are zero as well because here we are focusing on switching between two limit cycle 
+# instead we want to 
+# understand spatial dynamics
+
+seb1 = p*se1+(1-p)*se2
+sib1 = p*si1+(1-p)*si2
+ssb1 = p*ss1+(1-p)*ss2
+seb2 = p*se2+(1-p)*se1
+sib2 = p*si2+(1-p)*si1
+ssb2 = p*ss2+(1-p)*ss1
+
+
+
+ae[1..2]'=(2*ae[j]*be[j]+dele)/tme
+be[1..2]'=(be[j]^2-ae[j]^2+gee*seb[j]-gie*sib[j]-ld*gse*ssb[j]+mue)/tme
+se[1..2]'=(-se[j]+ae[j]/pi)/taue
+
+ai[1..2]'=(2*ai[j]*bi[j]+deli)/tmi
+bi[1..2]'=(bi[j]^2-ai[j]^2+gei* seb[j]-gii* sib[j]-ld*gsi* ssb[j] +mui)/tmi
+si[1..2]'=(-si[j]+ai[j]/pi)/taui
+
+as[1..2]'=(2*as[j]*bs[j]+dels)/tms
+bs[1..2]'=(bs[j]^2-as[j]^2+ges* seb[j]-gis* sib[j]-gss* ssb[j] +mus)/tms
+ss[1..2]'=(-ss[j]+as[j]/pi)/taus
+
+
+#for bifurcation gsi=.5 and mue=0
+par p= 1,mue=1.25,mui=-.5,mus=-2
+par gee=1.5,gei=2,ges=4.25 
+par gie=1,gii=.5,gis=0
+par gse=2,gsi=0.5,gss=0
+par tme=20,tmi=10,tms=10
+par taue=2,taui=7.5,taus=15
+par dele=0.1,deli=0.1,dels=0.1
+Param ld=.85
+
+#Correct init
+# Big limit cycle
+Init ae1 = 0.976, be1 = -0.217, se1 = 0.324, ai1 = 0.69, bi1 = -.807, 
+Init si1 = 0.3313, as1 = 0.179, bs1 = -.474, ss1 = 0.49
+
+# Small limit cycle
+Init ae2 = 1.746, be2 = -1.75, se2 = 0.798, ai2 = 0.666, bi2 = 2.16,
+Init si2 = 0.071, as2 = 0.729, bs2 = 3.816, ss2 = 0.046
+
+
+#Auto
+@ ntst=60, npr=500, nmax=2000, autoxmin=0.8, autoymin=-0.1
+@ autoxmax=1.1, autoymax=7, ds=.05, dsmin=0.001, dsmax=0.05, parmin=0, parmax=3.9
+@ total=4000,meth=cvode,tol=1e-10,atol=1e-10,bound=10000
+d6
+
+
+
+
+
